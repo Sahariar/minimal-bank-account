@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank User Interface.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="my-24">
+        <div class="container mx-auto">
+            <h1 class="text-8xl text-center">
+                $imple Bank  <span class="text-orange-600 font-semibold">
+                    User Interface.
+                </span>
+              </h1>
+
+              <h2 class="text-6xl text-center py-5">Let's Get some <span class="text-orange-600 font-semibold ">Moooooooooooooney</span></h2>
+          </div>
+    </header>
+
+    <main>
+         <!-- Start account section -->
+            <section class="container mx-auto mb-20" id="account-info">
+                <div class="w-3/4 mx-auto">
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-amber-400 rounded-2xl p-10">
+                            <h3 class="text-5xl text-white py-2" >
+                               Deposit
+                            </h3>
+                            <p class="text-white text-4xl py-2" >
+                               $<span id="deposit">00</span>
+                            </p>
+                        </div>
+                        <div class="bg-pink-400 rounded-2xl p-10">
+                            <h3 class="text-5xl text-white py-2" >
+                               Withdraw
+                             </h3>
+                             <p class="text-white text-4xl py-2" >
+                                $<span id="withdraw">00</span>
+                             </p>
+                        </div>
+                        <div class="bg-violet-400 rounded-2xl p-10">
+                            <h3 class="text-5xl text-white py-2" >
+                                Balance
+                             </h3>
+                             <p class="text-white text-4xl py-2">
+                                $<span id="balance">2300</span>
+                             </p>
+                        </div>
+                      </div>
+                </div>
+            </section>
+                    <!-- end account section -->
+                    <!-- start interaction-area -->
+            <section class="container mx-auto mb-20" id="interaction-area">
+                <div class="w-3/4 mx-auto">
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div class="bg-sky-300 rounded-2xl p-10">
+                            <h2 class="text-3xl py-2 text-white">Please Deposit </h2>
+                            <div class="from-area flex items-center justify-center my-8 flex-col space-y-4">
+
+                                <input type="text" name="deposit" id="user-deposit" placeholder="Enter your deposit amount" class="rounded text-pink-500 p-2 w-3/4 rounded-lg">
+
+                                <button type="submit" class="rounded-lg px-20 bg-rose-600 hover:bg-red-500 text-white py-2 w-1/2" id="submit-deposit">Deposit</button>
+                            </div>
+                        </div>
+   
+                        <div class="bg-indigo-300 rounded-2xl p-10">
+                            <h2 class="text-3xl py-2 text-white">Please withdraw </h2>
+                            <div class="from-area flex items-center justify-center my-8 flex-col space-y-4">
+
+                                <input type="text" name="withdraw" id="user-withdraw" placeholder="Enter amount to withdraw your money" class="rounded text-pink-500 p-2 w-3/4 rounded-lg">
+
+                                <button type="submit" class="rounded-lg px-20 bg-blue-500 hover:bg-sky-500 text-white py-2 w-1/2" id="submit-withdraw">Withdraw</button>
+                            </div>
+                        </div>
+   
+                      </div>
+                </div>
+            </section>
+            <!-- end interaction-area -->
+        </main>
+    <footer class="bg-lime-600">
+        <div class="container mx-auto text-white text-center py-10">
+            <div class="mb-6 sm:mb-0 sm:flex text-center">
+                <p>Copyright © 2022 $imple Bank.</p>
+                </div>
+        </div>
+        
+    </footer>
+   <script src="/js/diposit.js"></script>
+   <script src="/js/withdraw.js"></script>
+</body>
+</html>

@@ -12,7 +12,7 @@ submitButton.addEventListener("click", function (event) {
 		emailLowCase === "sahariark@gmail.com" &&
 		passwordInput.value === "123456saha"
 	) {
-		location.href = "/dashboard.html";
+		window.location.href = "https://sahariar.github.io/minimal-bank-account/dashboard.html";
 	} else {
 
         alert('invalid User')
